@@ -28,8 +28,17 @@ venv\Scripts\activate
 ## 4. Install Python Packages
 
 ```bash
+python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
+
+If you get an error like `No matching distribution found for sqlalchemy`, first check your Python version:
+
+```bash
+python --version
+```
+
+Use Python 3.11 or Python 3.12 for this project. If your version is too old, install a newer Python version and recreate the virtual environment.
 
 ## 5. Create The Environment File
 
