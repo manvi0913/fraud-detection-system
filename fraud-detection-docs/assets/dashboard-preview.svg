@@ -1,0 +1,16 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F3ECE2"/>
+  <rect x="0" y="0" width="290" height="900" fill="#23395B"/>
+  <rect x="28" y="34" width="66" height="66" rx="20" fill="#F7C873"/>
+  <text x="49" y="76" fill="#1C1C1C" font-size="28" font-family="Segoe UI" font-weight="700">FDS</text>
+  <text x="115" y="63" fill="white" font-size="30" font-family="Segoe UI" font-weight="700">Fraud Detection</text>
+  <text x="115" y="96" fill="#D7DFEA" font-size="18" font-family="Segoe UI">Admin Console</text>
+  <rect x="28" y="686" width="234" height="150" rx="26" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.14)"/>
+  <text x="48" y="722" fill="#D7DFEA" font-size="16" font-family="Segoe UI">ADMIN</text>
+  <text x="48" y="760" fill="white" font-size="28" font-family="Segoe UI" font-weight="700">Manvi Shukla</text>
+  <text x="48" y="796" fill="#D7DFEA" font-size="18" font-family="Segoe UI">Final Year BTech Project Owner</text>
+  <rect x="320" y="30" width="1250" height="190" rx="28" fill="#FFFDF8" stroke="#E7DDCF"/>
+  <text x="356" y="78" fill="#667085" font-size="18" font-family="Segoe UI">LIVE MONITORING PANEL</text>
+  <text x="356" y="132" fill="#1E2430" font-size="40" font-family="Segoe UI" font-weight="700">Real-Time Fraud Detection Dashboard</text>
+  <text x="356" y="174" fill="#667085" font-size="20" font-family="Segoe UI">Monitor suspicious transactions, scoring performance, and alerts from one admin view.</text>
+</svg>
