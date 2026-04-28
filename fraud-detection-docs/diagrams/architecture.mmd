@@ -1,0 +1,11 @@
+flowchart TD
+    A["Client / Banking App"] --> B["FastAPI Transaction API"]
+    B --> C["Fraud Scoring Engine"]
+    C --> D["Risk Decision: Approve / Review / Block"]
+    C --> E["Customer Behavior Context"]
+    E --> F["MySQL Transaction Store"]
+    D --> F
+    F --> G["Summary and Monitoring APIs"]
+    H["ML Training Pipeline"] --> I["Feature Engineering"]
+    I --> J["Baseline Fraud Model"]
+    J --> K["Future Live Model Integration"]
