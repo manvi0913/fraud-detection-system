@@ -1,6 +1,6 @@
 # Fraud Detection System
 
-This repository contains a detailed final-year BTech style project for a **Fraud Detection System** built with **Python, FastAPI, and MySQL**. The project is organized like a small academic product suite so it looks strong both on GitHub and on a resume.
+This repository contains a project **Fraud Detection System** built with **Python, FastAPI, and MySQL**. The project is organized like academic product suite so it looks strong both on GitHub and on a resume.
 
 ## Repository Structure
 
