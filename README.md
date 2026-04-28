@@ -1,6 +1,6 @@
 # Fraud Detection System
 
-This repository contains a project **Fraud Detection System** built with **Python, FastAPI, and MySQL**. The project is organized like academic product suite so it looks strong both on GitHub and on a resume.
+This repository contains a detailed final-year BTech style project for a **Fraud Detection System** built with **Python, FastAPI, and MySQL**. The project is organized like a small academic product suite so it looks strong both on GitHub and on a resume.
 
 ## Repository Structure
 
@@ -16,6 +16,16 @@ This repository contains a project **Fraud Detection System** built with **Pytho
 - Designed and implemented 4 REST APIs for transaction handling and fraud risk scoring, targeting 95%+ endpoint reliability.
 - Improved detection efficiency by 30% and reduced system response latency by 20% through optimized data processing and lightweight rule-based scoring.
 
+## Project Visuals
+
+### Admin Dashboard Preview
+
+![Admin Dashboard Preview](fraud-detection-docs/assets/dashboard-preview.svg)
+
+### API Documentation Preview
+
+![API Documentation Preview](fraud-detection-docs/assets/swagger-preview.svg)
+
 ## Best Way To Present It
 
 This project is intentionally written with:
@@ -26,5 +36,8 @@ This project is intentionally written with:
 - model training scripts
 - final-year report style documentation
 - setup and deployment instructions
+- an admin dashboard branded with **Manvi Shukla**
 
-Open the module READMEs to start with the backend, then review the ML pipeline and documentation.
+## Run Guide
+
+See the full laptop setup steps in `RUN_GUIDE.md`.
