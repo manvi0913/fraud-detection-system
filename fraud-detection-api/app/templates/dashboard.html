@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fraud Detection Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/dashboard.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <aside class="sidebar">
+            <div class="brand-block">
+                <div class="brand-pill">FDS</div>
+                <div>
+                    <h1>Fraud Detection</h1>
+                    <p>Admin Console</p>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a class="active" href="/admin/dashboard">Overview</a>
+                <a href="/docs">API Docs</a>
+                <a href="/api/v1/fraud/summary">Fraud Summary</a>
+                <a href="/health">Health</a>
+            </nav>
+            <div class="admin-card">
+                <span class="label">Admin</span>
+                <h2>Manvi Shukla</h2>
+                <p>Final Year BTech Project Owner</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="hero">
+                <div>
+                    <p class="eyebrow">Live Monitoring Panel</p>
+                    <h2>Real-Time Fraud Detection Dashboard</h2>
+                    <p class="subtext">
+                        Monitor suspicious transactions, track scoring performance, and review
+                        high-risk events from a clean academic-style admin panel.
+                    </p>
+                </div>
+                <div class="meta-card">
+                    <span class="label">Last Updated</span>
+                    <strong>{{ generated_at }}</strong>
+                    <span class="chip">Owner: {{ admin_name }}</span>
+                </div>
+            </header>
+
+            <section class="metric-grid">
+                <article class="metric-card">
+                    <span class="label">Transactions Today</span>
+                    <strong>{{ metrics.transactions_today }}</strong>
+                    <p>Designed to present 10,000+ daily transaction handling.</p>
+                </article>
+                <article class="metric-card">
+                    <span class="label">High Risk Alerts</span>
+                    <strong>{{ metrics.high_risk_alerts }}</strong>
+                    <p>Real-time flagged cases requiring immediate action.</p>
+                </article>
+                <article class="metric-card">
+                    <span class="label">Review Queue</span>
+                    <strong>{{ metrics.review_queue }}</strong>
+                    <p>Transactions currently marked for manual verification.</p>
+                </article>
+                <article class="metric-card">
+                    <span class="label">Avg. Latency</span>
+                    <strong>{{ metrics.latency_ms }} ms</strong>
+                    <p>Optimized lightweight scoring path for faster decisions.</p>
+                </article>
+                <article class="metric-card">
+                    <span class="label">Endpoint Reliability</span>
+                    <strong>{{ metrics.reliability }}</strong>
+                    <p>Academic target aligned with your resume project statement.</p>
+                </article>
+                <article class="metric-card">
+                    <span class="label">Detection Uplift</span>
+                    <strong>{{ metrics.detection_uplift }}</strong>
+                    <p>Improvement through multi-factor fraud scoring design.</p>
+                </article>
+            </section>
+
+            <section class="panel-grid">
+                <article class="panel">
+                    <div class="panel-header">
+                        <h3>Recent Critical Alerts</h3>
+                        <span class="panel-tag">Priority Queue</span>
+                    </div>
+                    <div class="alert-list">
+                        {% for alert in alerts %}
+                        <div class="alert-row">
+                            <div>
+                                <strong>{{ alert.external_id }}</strong>
+                                <p>{{ alert.customer_id }}</p>
+                            </div>
+                            <div>
+                                <span class="score-badge">{{ alert.score }}</span>
+                            </div>
+                            <div class="reason-cell">
+                                <p>{{ alert.reason }}</p>
+                            </div>
+                            <div>
+                                <span class="status-badge">{{ alert.status }}</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-header">
+                        <h3>Scoring Logic Snapshot</h3>
+                        <span class="panel-tag">Rule Engine</span>
+                    </div>
+                    <ul class="logic-list">
+                        <li>High amount transactions receive weighted risk points.</li>
+                        <li>Velocity checks capture frequent short-interval payments.</li>
+                        <li>Geo mismatch and device change increase review probability.</li>
+                        <li>Merchant category and odd-hour activity improve fraud sensitivity.</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
