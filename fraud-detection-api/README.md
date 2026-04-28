@@ -9,6 +9,7 @@ The backend service for the Fraud Detection System is a **FastAPI + MySQL** appl
 - Generates fraud risk scores using **multi-factor decision logic**
 - Designed around **4 core REST APIs**
 - Includes **unit tests**, **Docker Compose**, and **GitHub Actions CI**
+- Includes an academic-style admin dashboard with **Manvi Shukla** as the project admin
 
 ## Core REST APIs
 
@@ -26,5 +27,11 @@ pip install -r requirements.txt
 docker compose up -d
 uvicorn app.main:app --reload
 ```
+
+## Admin Dashboard
+
+Open:
+
+- `http://127.0.0.1:8000/admin/dashboard`
 
 Open Swagger UI at `http://127.0.0.1:8000/docs`.
